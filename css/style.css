@@ -1,18 +1,98 @@
-.foto_cabecera {
-  width: 200px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-#interespacio_fotos {
-  display:block;
+header {
+  width: 100%;
+  background-color: rgb(255, 188, 73);
+/*  border:4px solid #ccc; padding:2px;*/
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }
-.foto_M_Eugenia {
-  width: 100px;
+  .foto-cabecera {
+    width: 20%;
+    height: 10%;
+  }
+  .nav-cabecera {
+    list-style: none;
+    font-size: 110%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+    padding-right: 17px;
+  }
+  .nav-cabecera li {
+    padding-left: 6px;
+  }
+main {
+  width: 100%;
+  background-color: #f7f9bb;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
-.foto_Cristina {
-  width: 100px;
+h2 {
+  font-size: 300%;
+  color: rgb(10, 195, 168);
+
 }
-.felix {
-  width: 100px;
+
+
+.conocenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.ivan {
-  width: 100px;
+.foto-nombre {
+  list-style: none;
+  width: 100%;
+}
+
+.foto{
+  width:80%;
+}
+
+.foto-nombre, p {
+  padding-left: 2%;
+}
+.iconos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 188, 73);
+}
+@media screen and (min-width: 768px) {
+
+  .conocenos {
+    display: flex;
+
+    justify-content: space-around;
+    align-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .foto{
+    width: 300px;
+    height: 50px%;
+
+}
+@media screen and (min-width: 1000px) {
+  .conocenos {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .foto{
+    width: 300px;
+    height: 50px%;
+}
 }
